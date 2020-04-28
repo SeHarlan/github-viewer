@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Repo component renders Repo 1`] = `
+<h3>
+  test repo
+</h3>
+`;

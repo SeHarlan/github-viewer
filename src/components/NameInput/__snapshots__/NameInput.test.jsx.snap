@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NameInput component renders NameInput 1`] = `
+<Fragment>
+  <button
+    onClick={[Function]}
+  >
+    Submit
+  </button>
+  <input
+    name="username"
+    onChange={[Function]}
+    type="text"
+    value="Scott"
+  />
+</Fragment>
+`;

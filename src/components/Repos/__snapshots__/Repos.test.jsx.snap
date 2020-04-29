@@ -6,7 +6,7 @@ exports[`Repos component renders Repos 1`] = `
     key="repo test"
   >
     <Repo
-      repoName="repo test"
+      name="repo test"
     />
   </li>
 </ul>

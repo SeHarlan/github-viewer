@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pull component renders Pull 1`] = `
+<em>
+  2
+  : 
+  pullbody
+</em>
+`;

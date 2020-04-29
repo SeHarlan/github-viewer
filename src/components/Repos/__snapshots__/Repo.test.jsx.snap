@@ -1,7 +1,19 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Repo component renders Repo 1`] = `
-<h3>
-  test repo
-</h3>
+<Fragment>
+  <h3>
+    test repo
+  </h3>
+  <Pulls
+    pulls={
+      Array [
+        Object {
+          "body": "test",
+          "number": 3,
+        },
+      ]
+    }
+  />
+</Fragment>
 `;

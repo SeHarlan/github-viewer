@@ -13,5 +13,26 @@ exports[`NameInput component renders NameInput 1`] = `
     type="text"
     value="Scott"
   />
+  <select
+    id="openOrClosed"
+    name="openOrClosed"
+    onChange={[Function]}
+  >
+    <option
+      value={null}
+    >
+      All PRs
+    </option>
+    <option
+      value="closed"
+    >
+      Closed PRs
+    </option>
+    <option
+      value="open"
+    >
+      Open PRs
+    </option>
+  </select>
 </Fragment>
 `;

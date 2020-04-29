@@ -11,7 +11,8 @@ export default class GithubContainer extends Component {
     followersCount: 0,
     followingCount: 0,
     githubLink: '',
-    repos: []
+    repos: [],
+    closedOrOpen: null
   }
 
   handleButtonClick = () => {
@@ -34,7 +35,7 @@ export default class GithubContainer extends Component {
     this.setState({ [target.name]: target.value });
   }
   render() {
-    const { name, username, followersCount, followingCount, githubLink, repos } = this.state;
+    const { name, username, followersCount, followingCount, githubLink, repos, closedOrOpen } = this.state;
 
     const userProfile = !this.state.name 
       ? (<h1>Please Enter Your Github Username</h1>)
@@ -53,7 +54,7 @@ export default class GithubContainer extends Component {
           onChange={this.handleChange}
           username={username} />
         {userProfile}
-        <Repos repos={repos} />
+        <Repos repos={repos} closedOrOpen={closedOrOpen}/>
       </>);
   }
 }

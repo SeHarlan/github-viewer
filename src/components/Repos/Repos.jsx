@@ -2,10 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Repo from './Repo.jsx';
 
-const Repos = ({ repos }) => {
+const Repos = ({ repos, closedOrOpen }) => {
   const repoElements = repos.map(repo => (
     <li key={repo.name}>
-      <Repo {...repo} />
+      <Repo {...repo} closedOrOpen={closedOrOpen} />
     </li>
   ));
   return (
@@ -17,7 +17,8 @@ const Repos = ({ repos }) => {
 
 
 Repos.propTypes = {
-  repos: PropTypes.array.isRequired
+  repos: PropTypes.array.isRequired,
+  closedOrOpen: PropTypes.string
 };
 
 export default Repos;
